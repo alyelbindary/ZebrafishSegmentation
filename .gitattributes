@@ -1,0 +1,4 @@
+AllData/** filter=lfs diff=lfs merge=lfs -text
+SAM_Brain/OG_brain/sam_for_brain_MRI_segmentation/data/** filter=lfs diff=lfs merge=lfs -text
+SAM_Brain/zebra_SAM/data/** filter=lfs diff=lfs merge=lfs -text
+SAM_Brain/zebra_SAM/raw_data/** filter=lfs diff=lfs merge=lfs -text
