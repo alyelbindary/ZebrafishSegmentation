@@ -74,7 +74,9 @@ The most important files and folders are the following:
 The project data can be found within three different folders : 
 - `raw_data` : contains the raw light-sheet scans and manual segmentations generated through the 3D Slicer software ;
 - `data` : contains the adapted data for the binary segmentation case ;
-- `multi_data` : contains the adapted data for the multi-class segmentation case ;
+- `multi_data` : contains the adapted data for the multi-class segmentation case.
+
+When cloning the repo, make sure to use `git-lfs` in order to properly load the files! More information about `git-lfs` can be found [here](https://github.com/epfl-nlp/cs-552-modern-nlp/blob/main/Exercises/tutorials.md).
 
 ## Report
 
@@ -97,5 +99,5 @@ conda activate zebraSAM
 pip install -r requirements.txt
 ```
 
-2. Run the Notebooks! It is advised to run each cell individually rather than the entire notebook at once, to make sure that everything is in order.
+2. Run the Notebooks! It is advised to run each cell individually rather than the entire notebook at once, to make sure that everything is in order. Additionally, be careful of certain cells that may take more time than others to execute (training and testing cells namely) as well as certain celss that may not be necessary depending on the context (generating data folders cell for example). For usage on Google Colab, certain cells must be used in order to download the appropriate environement requirements as well mounting the repository onto google drive.
 
