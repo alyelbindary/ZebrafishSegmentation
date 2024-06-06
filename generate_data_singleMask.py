@@ -85,8 +85,13 @@ def convert_nrrd_to_tiffs(input_file_path, output_folder, file_prefix):
     data, _ = nrrd.read(input_file_path)
 
     # PROPER ROTATION CONFIGURATION 
-    data = rotate_data(data, 90)
-    data = rotate_around_middle_horizontal_axis(data, 180)
+    if len(data.shape) == 3 :
+        data = rotate_data(data, 90)
+        data = rotate_around_middle_horizontal_axis(data, 180)
+    elif len(data.shape) == 4 :
+        data = data[0, :, :, :]  + data[1, :, :, :]
+        data = rotate_data(data, 90)
+        data = rotate_around_middle_horizontal_axis(data, 180)
 
     # Create the output folder if it doesn't exist
     if not os.path.exists(output_folder):

@@ -101,3 +101,11 @@ pip install -r requirements.txt
 
 2. Run the Notebooks! It is advised to run each cell individually rather than the entire notebook at once, to make sure that everything is in order. Additionally, be careful of certain cells that may take more time than others to execute (training and testing cells namely) as well as certain celss that may not be necessary depending on the context (generating data folders cell for example). For usage on Google Colab, certain cells must be used in order to download the appropriate environement requirements as well mounting the repository onto google drive.
 
+## Cloning The Repository Without Large Files
+
+All of the data folders as well as the `models` folder have been pushed using `git-lfs`. If the user wishes to clone the repository without the large files that have been pushed using `git-lfs`, then the following commands can be used : 
+
+```bash
+$env:GIT_LFS_SKIP_SMUDGE = "1"
+git clone https://github.com/alyelbindary/ZebrafishSegmentation.git
+```
