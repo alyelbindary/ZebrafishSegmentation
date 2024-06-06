@@ -94,12 +94,14 @@ To run the code in this project, follow these steps:
 1. Make sure you have the necessary libraries (numpy, and matplotlib), installed in your Python environment. You can set up a Conda environment with the required libraries using the following steps:
 
 ```bash
-conda create --name zebraSAM=3.7.16
+conda create --name zebraSAM python=3.9
 conda activate zebraSAM
 pip install -r requirements.txt
 ```
 
-2. Run the Notebooks! It is advised to run each cell individually rather than the entire notebook at once, to make sure that everything is in order. Additionally, be careful of certain cells that may take more time than others to execute (training and testing cells namely) as well as certain celss that may not be necessary depending on the context (generating data folders cell for example). For usage on Google Colab, certain cells must be used in order to download the appropriate environement requirements as well mounting the repository onto google drive.
+2. Run the Notebooks! It is advised to run each cell individually rather than the entire notebook at once, to make sure that everything is in order. Additionally, be careful of certain cells that may take more time than others to execute (training and testing cells namely) as well as certain celss that may not be necessary depending on the context. For usage on Google Colab, certain cells must be used in order to download the appropriate environement requirements as well mounting the repository onto google drive.
+
+3. ⚠️ <span style="color:red;">ATTENTION!</span> Please note that the cells under the "Adapt Raw Zebrafish Data" section of the notebooks SHOULD NOT be excuted if the data within the  `data` and `multi_data` folders is already there! ⚠️
 
 ## Cloning The Repository Without Large Files
 
