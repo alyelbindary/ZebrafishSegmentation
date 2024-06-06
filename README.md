@@ -14,7 +14,7 @@ This repository contains code and files for implementing the finetuning of the n
 
 - Selman Sakar
 
-## Supervising TA :
+## Supervising TA 
 
 - Artur Krzysztof Banach
 
