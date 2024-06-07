@@ -110,11 +110,11 @@ pip install -r requirements.txt
 pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
 ```
 
-Once all the installations are done, then the `CFG.DEVICE` variable within the "Configuratiopns" section of the notebooks should ne equal to "`cuda`", otherwise, this would mean that the installation has not been fully completed yet.
+Once all the installations are done, then the `CFG.DEVICE` variable within the "Configurations" section of the notebooks should be equal to "`cuda`", otherwise, this would mean that the installation has not been fully completed yet.
 
-Virtual GPU usage could also be done using Google Colab.
+Virtual GPU usage could also be done with Google Colab.
 
-3. Run the Notebooks! It is advised to run each cell individually rather than the entire notebook at once, to make sure that everything is in order. Additionally, be careful of certain cells that may take more time than others to execute (training and testing cells namely) as well as certain celss that may not be necessary depending on the context. For usage on Google Colab, certain cells must be used in order to download the appropriate environement requirements as well mounting the repository onto google drive.
+3. Run the Notebooks! It is advised to run each cell individually rather than the entire notebook at once, to make sure that everything is in order. Additionally, be careful of certain cells that may take more time than others to execute (training and testing cells namely) as well as certain celss that may not be necessary depending on the context. For usage on Google Colab, certain cells must be used in order to download the appropriate environement requirements as well as mounting the repository onto google drive.
 
 4. ⚠️ <span style="color:red;">ATTENTION!</span> Please note that the cells under the "Adapt Raw Zebrafish Data" section of the notebooks SHOULD NOT be excuted if the data within the  `data` and `multi_data` folders is already there! ⚠️
 
