@@ -12,4 +12,5 @@ pynrrd
 tensorflow
 tensorflow-estimator
 keras
-keras-gpu
+ipykernel
+ipywidgets
