@@ -48,9 +48,9 @@ ZebrafishSegmentation/
 │ │ ├── Segmentation_30.seg.nrrd
 │ │ └── t0030_channel 3.tif
 ├── models/
-│ └── best_model_weights_1.pt
-│ └── best_model_weights_2.pt
-│ └── best_model_weights_3.pt
+│ └── base_config_10soms30.pth
+│ └── medsam_10soms_epoch10.pth
+│ └── model_multi_final_epoch30.pth
 ├── generate_data_folder.py
 ├── generate_data_singleMask.py
 ├── README.md
@@ -84,7 +84,12 @@ The `Semester Project II Report.pdf` file contains the report that has been done
 
 ## Models
 
-The `models` folder contains different checkpoints that we have saved for some of the models that we have trained, that way you can directly test one of the already finetuned SAM models during the project. Currently There is only the trained version of the base SAM model, of which the original version can be found on the [HuggingFace](https://huggingface.co/models?other=sam) platform.
+The `models` folder contains different checkpoints that we have saved for some of the models that we have trained, that way you can directly test one of the already finetuned SAM models during the project. Currently there are three different model paths :
+- `base_config_10soms30.pth` : base SAM model trained on 30 epochs ;
+- `medsam_10soms_epoch10.pth` : medsam model trained on 10 epochs ;
+- `model_multi_final_epoch30.pth` : multi-class model (using the base SAM model) on 30 epochs.
+
+The original versions of these models can be found on the [HuggingFace](https://huggingface.co/models?other=sam) platform.
 
 
 ## Running the Code
