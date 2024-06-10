@@ -51,6 +51,7 @@ ZebrafishSegmentation/
 │ └── base_config_10soms30.pth
 │ └── medsam_10soms_epoch10.pth
 │ └── model_multi_final_epoch30.pth
+├── Aly_Final Presentation.pptx
 ├── generate_data_folder.py
 ├── generate_data_singleMask.py
 ├── README.md
@@ -78,9 +79,11 @@ The project data can be found within three different folders :
 
 When cloning the repo, make sure to use `git-lfs` in order to properly load the files! More information about `git-lfs` can be found [here](https://github.com/epfl-nlp/cs-552-modern-nlp/blob/main/Exercises/tutorials.md).
 
-## Report
+## Report & Presentation
 
 The `Semester Project II Report.pdf` file contains the report that has been done on this project. It provides the background highlighting the research that has been done in order to implement this repository, and allows for a better understanding of the context of this project.
+
+The `Aly_Final Presentation.pptx` file contains the slides that have been used for the final presentation.
 
 ## Models
 
